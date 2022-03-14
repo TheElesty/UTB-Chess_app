@@ -8,11 +8,9 @@ Rozšířit aplikci na hraní šachů o konectivitu k hardwarové šachovnici po
 - Vytvořit modul simulující výslednou HW šachovnici (komunikace po BT, atd.)
 
 ## Technologie
-- Kotlin
-- Android Studio
-- MySQL + PHP pro zprávu DB
-- Arduino NANO + BT HC-05 BLE modul
-- Wiring (mutace C pro programování low-end HW)
+- Kotlin -- Android Studio
+- MySQL + PHP pro správu DB
+- Arduino NANO + BT HC-05 BLE modul -- ArduinoIDE, Wiring (mutace C pro programování low-end HW)
 
 ## Časový plán
 -- Přípravné práce -- 8h
