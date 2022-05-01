@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `games` (
   `game_state` enum('new','ongoing','finished','daily') COLLATE utf8_czech_ci NOT NULL DEFAULT 'new',
   `initial_fen` varchar(100) COLLATE utf8_czech_ci NOT NULL DEFAULT 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
   PRIMARY KEY (`id_game`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -44,16 +44,15 @@ CREATE TABLE IF NOT EXISTS `games` (
 
 CREATE TABLE IF NOT EXISTS `moves` (
   `id_move` int(11) NOT NULL AUTO_INCREMENT,
-  `order` int(11) NOT NULL,
-  `half_move` tinyint(1) NOT NULL DEFAULT 0,
-  `src_row` int(11) NOT NULL,
+  `order` int(11) NOT NULL, 
   `src_col` enum('a','b','c','d','e','f','g','h') COLLATE utf8_czech_ci NOT NULL,
-  `trg_row` int(11) NOT NULL,
+  `src_row` int(11) NOT NULL,
   `trg_col` enum('a','b','c','d','e','f','g','h') COLLATE utf8_czech_ci NOT NULL,
+  `trg_row` int(11) NOT NULL,
   `id_game` int(11) NOT NULL,
   PRIMARY KEY (`id_move`),
   KEY `id_game` (`id_game`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables
