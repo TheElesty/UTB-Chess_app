@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Chess_app</string>
+    <string name="splash_description">Splash screen img</string>
+    <string name="king_icon">King icon</string>
+    <string name="title_daily">Daily challenge</string>
+    <string name="title_vsComputer">Game vs computer</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_vsPlayer">Game vs Player</string>
+    <string name="light_square_color">Light square color</string>
+    <string name="color">color</string>
+    <string name="new_puzzle">New puzzle</string>
+    <string name="new_random">New random</string>
+    <string name="daily_placeholder">Daily challenge title placeholder</string>
+    <string name="daily_loading">Loading daily challenge</string>
+    <string name="puzzle_solution">Puzzle solution</string>
+    <string name="solution">"Solution :\n%s"</string>
+    <string name="save">Save</string>
+    <string name="new_game">New game</string>
+    <string name="dark_square_color">Dark square color</string>
+    <string name="light_color">Light color</string>
+    <string name="dark_color">Dark color</string>
+
+    <string name="preview_of_dark_square">Preview of dark square</string>
+    <string name="preview_of_light_square">Preview of light square</string>
+    <string name="reset_settings">Reset settings</string>
+    <string name="save_settings">Save settings</string>
 </resources>

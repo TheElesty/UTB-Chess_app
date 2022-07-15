@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.theelesty.chess_app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Chess_app">
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Chess_app"
+        tools:targetApi="m">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.GameComputer"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GamePlayer"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DailyChallenge"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            android:label="Main" />
+        <activity
+            android:name=".ui.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
